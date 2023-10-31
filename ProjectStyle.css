@@ -1,0 +1,33 @@
+#text,h2,p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-image: url(https://images.unsplash.com/photo-1584531979583-18c5c4b25efc?auto=format&fit=crop&q=80&w=987&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+#midimg{
+    height: 250px;
+    width: 500px;
+    border: 3px solid black;
+}
+
+#info1,#info2,#info3,#info4,#info5,#info6{
+    width: 400px;
+    background-color: rgb(216, 216, 216);
+}
+
+#purp{
+    width: 550px;
+}
+
+#bwcars{
+    height: 350px;
+    width: 600px;
+    border: 3px solid black;
+}
+
+h2,#purp,#buttons{
+    padding-left: 30px;
+}
+
