@@ -6,7 +6,7 @@ body{
     background-image: url(https://images.unsplash.com/photo-1584531979583-18c5c4b25efc?auto=format&fit=crop&q=80&w=987&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
 }
 
-#midimg{
+#midimg,#lowimg{
     height: 250px;
     width: 500px;
     border: 3px solid black;
