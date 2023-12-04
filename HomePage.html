@@ -45,7 +45,7 @@
                         <img id="bwcars" src="https://mycarmakesnoise.com/wp-content/uploads/2022/03/Black-VS-White-Car2-1024x482.jpg">
                     </th>
                     <th>
-                        <h2>Contact Info</h2>
+                        <h2>Social Media</h2>
                         <div class="btn-group" id="buttons">
                             <a href="#" class="btn btn-dark">Instagram</a>
                 
@@ -63,13 +63,35 @@
         
         <div>
             <h3>Sign Up for Notifications</h3>
-            <form>
-                <input type="text" placeholder="Username">
-                <input type="password" placeholder="Password">
-                <input type="text" placeholder="Email">
-                <input type="submit" value="Sign Up">
+            <form name="myform">
+                <input type="text" placeholder="Username" name="user" required>
+                <input type="password" placeholder="Password" name="pass" required>
+                <input type="text" placeholder="Email" name="email" required>
+                <input type="submit" value="Sign Up" onclick="return validateform()">
             </form>
         </div>
+
+        <script>
+
+            function validateform(){
+                let u_name = document.forms['myform']['user'].value
+                let u_password = document.forms['myform']['pass'].value
+                let u_email = document.forms['myform']['email'].value
+
+
+                if(u_name=='' || u_password=='' || u_email==''){
+                    alert('input field is empty is empty, please fill out')
+                }
+                else if (u_password.length < 8){
+                    alert('password is too short')
+                }
+                else{
+                    alert('Thank you for signing up!')
+                }
+
+            }
+
+        </script>
 
     </body>
 </html>
