@@ -1,9 +1,13 @@
-#text,h2,p,h3{
+#text,h2,p,h3,h4{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 body{
     background-image: url(https://images.unsplash.com/photo-1584531979583-18c5c4b25efc?auto=format&fit=crop&q=80&w=987&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+h4{
+    text-align: center;
 }
 
 #midimg,#lowimg,#highimg{
@@ -31,3 +35,18 @@ h2,#purp,#buttons{
     padding-left: 30px;
 }
 
+#homeimg{
+    height: 200px;
+    width: 350px;
+    border-radius: 10%;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+#homeimg:hover{
+    opacity: 70%;
+}
+
+#hometable{
+    margin-left: 50px;
+}
