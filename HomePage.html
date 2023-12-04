@@ -33,7 +33,7 @@
             <table>
                 <tr>
                     <th>
-                        <h2>Purpose</h2>
+                        <h2>Looking For A Car?</h2>
                         <p id="purp">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste quod distinctio omnis, architecto quibusdam animi voluptatem, at tenetur earum voluptate delectus possimus? Quos dolorem rem possimus autem reprehenderit, odio et?</p>
                     </th>
                     <th>
@@ -88,7 +88,7 @@
         <br><br><br>
         
         <div>
-            <h3>Sign Up for Notifications</h3>
+            <h3>Sign Up For Notifications</h3>
             <form name="myform">
                 <input type="text" placeholder="Username" name="user" required>
                 <input type="password" placeholder="Password" name="pass" required>
@@ -108,9 +108,9 @@
 
 
                 if(u_name=='' || u_password=='' || u_email==''){
-                    alert('input field is empty is empty, please fill out')
+                    alert('input field is empty, please fill out')
                 }
-                if (u_password.length < 8){
+                else if (u_password.length < 8){
                     alert('password is too short')
                 }
                 else{
