@@ -18,10 +18,57 @@
         </ul>
     </div>
 
-    <br><br><br>
+    <br>
+
+    <form name="form3">
+        <div class="row">
+            <div class="col-3">
+                <h5>Looking for a Brand?</h5>
+                <input type="text" placeholder="Brand" name="Brand" class="form-control">
+                <input type="submit" value="Enter" id="btn" class="btn btn-dark" onclick="return validateform()">
+            </div>
+            <div class="col-9">
+            </div>
+        </div>
+    </form>
+
+
+
+    <script>
+
+        function validateform(){
+            let x = document.forms['form3']['Brand'].value
+
+            if (x=='Ford' || x=='ford'){
+                document.getElementById('highimg3').id = 'newid'; return false
+            }
+            else if (x=='Chevorlet' || x=='chevorlet'){
+                document.getElementById('highimg1').id = 'newid'; return false
+            }
+            else if (x=='Subaru' || x=='subaru'){
+                document.getElementById('highimg2').id = 'newid'; return false
+            }
+            else if (x=='Toyota' || x=='toyota'){
+                document.getElementById('highimg4').id = 'newid'; return false
+            }
+            else if (x=='Nissan' || x=='nissan'){
+                document.getElementById('highimg5').id = 'newid'; return false
+            }
+            else if (x=='Audi' || x=='audi'){
+                document.getElementById('highimg6').id = 'newid'; return false
+            }
+            else{
+                alert('Sorry, there are no results for this brand.')
+            }
+
+        }
+
+    </script>
+
+<br>
 
     <div class="row">
-        <div class="col"><img id="highimg" src="https://cdn.motor1.com/images/mgl/xeOR6/s1/2018-chevrolet-camaro-1ss-1le.jpg">
+        <div class="col"><img id="highimg1" src="https://cdn.motor1.com/images/mgl/xeOR6/s1/2018-chevrolet-camaro-1ss-1le.jpg">
             <div class="m-5">
                 <button class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#info1">
                     2023 Chevorlet Camaro SS
@@ -31,7 +78,7 @@
                 </p>
             </div>
         </div>
-        <div class="col"><img id="highimg" src="https://hips.hearstapps.com/hmg-prod/images/2019-wrx-and-wrx-sti-series-gray-104-1528131808.jpg">
+        <div class="col"><img id="highimg2" src="https://hips.hearstapps.com/hmg-prod/images/2019-wrx-and-wrx-sti-series-gray-104-1528131808.jpg">
             <div class="m-5">
                 <button class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#info2">
                     2019 Subaru WRX STI
@@ -41,7 +88,7 @@
                 </p>
             </div>
         </div>
-        <div class="col"><img id="highimg" src="https://www.motortrend.com/uploads/2023/01/2023-Ford-Mustang-Mach-1-6M-42.jpg">
+        <div class="col"><img id="highimg3" src="https://www.motortrend.com/uploads/2023/01/2023-Ford-Mustang-Mach-1-6M-42.jpg">
             <div class="m-5">
                 <button class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#info3">
                     2023 Ford Mustang GT
@@ -51,7 +98,7 @@
                 </p>
             </div>
         </div>
-        <div class="col"><img id="highimg" src="https://hips.hearstapps.com/hmg-prod/images/2023-toyota-supra-a91-mt-1651243640.jpg?crop=0.837xw:0.745xh;0.0833xw,0.115xh&resize=1200:*">
+        <div class="col"><img id="highimg4" src="https://hips.hearstapps.com/hmg-prod/images/2023-toyota-supra-a91-mt-1651243640.jpg?crop=0.837xw:0.745xh;0.0833xw,0.115xh&resize=1200:*">
             <div class="m-5">
                 <button class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#info4">
                     2023 Toyota Supra
@@ -61,7 +108,7 @@
                 </p>
             </div>
         </div>
-        <div class="col"><img id="highimg" src="https://www.slashgear.com/img/gallery/2023-nissan-z-specs-features-possible-pricing-and-release/l-intro-1643140847.jpg">
+        <div class="col"><img id="highimg5" src="https://www.slashgear.com/img/gallery/2023-nissan-z-specs-features-possible-pricing-and-release/l-intro-1643140847.jpg">
             <div class="m-5">
                 <button class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#info5">
                     2023 Nissan Z
@@ -71,7 +118,7 @@
                 </p>
             </div>
         </div>
-        <div class="col"><img id="highimg" src="https://hips.hearstapps.com/hmg-prod/images/new-audi-a3-sedan-101-1595373883.jpg?crop=0.606xw:0.455xh;0.107xw,0.198xh&resize=1200:*">
+        <div class="col"><img id="highimg6" src="https://hips.hearstapps.com/hmg-prod/images/new-audi-a3-sedan-101-1595373883.jpg?crop=0.606xw:0.455xh;0.107xw,0.198xh&resize=1200:*">
             <div class="m-5">
                 <button class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#info6">
                     2023 Audi A3
@@ -82,5 +129,6 @@
             </div>
     </div>
     </div>
+
 </body>
 </html>

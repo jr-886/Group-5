@@ -19,10 +19,54 @@
                 </ul>
             </div>
 
-            <br><br><br>
+            <br>
+
+            <form name="form2">
+                <div class="row">
+                    <div class="col-3">
+                        <h5>Looking for a Brand?</h5>
+                        <input type="text" placeholder="Brand" name="Brand" class="form-control">
+                        <input type="submit" value="Enter" id="btn" class="btn btn-dark" onclick="return validateform()">
+                    </div>
+                    <div class="col-9">
+                    </div>
+                </div>
+            </form>
+        
+        
+        
+            <script>
+        
+                function validateform(){
+                    let x = document.forms['form2']['Brand'].value
+        
+                    if (x=='Subaru' || x=='subaru'){
+                        document.getElementById('midimg3').id = 'newid'; return false
+                    }
+                    if (x=='Dodge' || x=='dodge'){
+                        document.getElementById('midimg1').id = 'newid'; document.getElementById('midimg2').id = 'newid'; return false
+                    }
+                    if (x=='Mustang' || x=='mustang'){
+                        document.getElementById('midimg4').id = 'newid'; return false
+                    }
+                    if (x=='Camaro' || x=='camaro'){
+                        document.getElementById('midimg5').id = 'newid'; return false
+                    }
+                    if (x=='Nissan' || x=='nissan'){
+                        document.getElementById('midimg6').id = 'newid'; return false
+                    }
+                    else{
+                        alert('Sorry, there are no results for this brand.')
+                    }
+        
+                }
+        
+            </script>
+        
+        <br>
 
             <div class="row">
-                <div class="col"><img id="midimg" src="https://www.carscoops.com/wp-content/uploads/2019/04/30bd62fe-2005-dodge-neon-srt4-bat-auction-60-1024x555.jpg">
+                <div class="col"><img id="midimg1" src="https://www.carscoops.com/wp-content/uploads/2019/04/30bd62fe-2005-dodge-neon-srt4-bat-auction-60-1024x555.jpg">
                     <div class="m-5">
                         <button class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#info1">
                             '03-'05 Dodge SRT-4 NEON
@@ -32,7 +76,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col"><img id="midimg" src="https://bringatrailer.com/wp-content/uploads/2021/05/2008_dodge_caliber_16358897949740d7cb2ef047d0IMG_7712-scaled.jpg?fit=940%2C621">
+                <div class="col"><img id="midimg2" src="https://bringatrailer.com/wp-content/uploads/2021/05/2008_dodge_caliber_16358897949740d7cb2ef047d0IMG_7712-scaled.jpg?fit=940%2C621">
                     <div class="m-5">
                         <button class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#info2">
                             '08-'09 Dodge SRT-4 Caliber
@@ -42,7 +86,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col"><img id="midimg" src="https://media.carsandbids.com/cdn-cgi/image/width=2080,quality=70/d9b636c2ec84ddc3bc7f2eb32861b39bdd5f9683/photos/3OzoyGQR.Wj74IGmrf-(edit).jpg?t=162605384961">
+                <div class="col"><img id="midimg3" src="https://media.carsandbids.com/cdn-cgi/image/width=2080,quality=70/d9b636c2ec84ddc3bc7f2eb32861b39bdd5f9683/photos/3OzoyGQR.Wj74IGmrf-(edit).jpg?t=162605384961">
                     <div class="m-5">
                         <button class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#info3">
                             '05 Subaru WRX / STI
@@ -52,7 +96,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col"><img id="midimg" src="https://i.pinimg.com/originals/f6/86/6d/f6866d58e48e35065bd57ddafc06fe24.jpg">
+                <div class="col"><img id="midimg4" src="https://i.pinimg.com/originals/f6/86/6d/f6866d58e48e35065bd57ddafc06fe24.jpg">
                     <div class="m-5">
                         <button class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#info4">
                             '14 Mustang GT
@@ -62,7 +106,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col"><img id="midimg" src="https://di-uploads-pod1.dealerinspire.com/coxchevy/uploads/2013/12/2014_Chevy_Camaro_2SS.jpg">
+                <div class="col"><img id="midimg5" src="https://di-uploads-pod1.dealerinspire.com/coxchevy/uploads/2013/12/2014_Chevy_Camaro_2SS.jpg">
                     <div class="m-5">
                         <button class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#info5">
                             '14 Camaro SS
@@ -72,7 +116,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col"><img id="midimg" src="https://images.drive.com.au/driveau/image/upload/c_fill,f_auto,g_auto,h_1080,q_auto:eco,w_1920/v1/cms/uploads/F2F3ij1dRy6XlgMTKB1W">
+                <div class="col"><img id="midimg6" src="https://images.drive.com.au/driveau/image/upload/c_fill,f_auto,g_auto,h_1080,q_auto:eco,w_1920/v1/cms/uploads/F2F3ij1dRy6XlgMTKB1W">
                     <div class="m-5">
                         <button class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#info6">
                             '09-'10 Nissan 370z
